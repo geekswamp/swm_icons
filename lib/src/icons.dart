@@ -13,7 +13,7 @@ enum SWMIcons {
   /// Apple icon.
   apple(0xea03),
 
-  /// Arrow cirlce down icon.
+  /// Arrow circle down icon.
   arrow_circle_down(0xea04),
 
   /// Arrow circle left icon.

@@ -2,7 +2,7 @@
 
 The SWM Icon pack for Flutter. Provides 200+ additional icons to use in your apps.
 
-## Instalation
+## Installation
 
 In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 

@@ -2,9 +2,27 @@ import 'package:flutter/material.dart';
 import 'package:swm_icons/swm_icons.dart';
 
 /// {@template swm_icon}
-/// A widget that displays a SWM icon with customizable properties.
-/// {@endtemplate}
-class SWMIcon extends StatelessWidget {
+/// A widget that displays a SWM (Software Made) icon with customizable properties.
+///
+/// This widget wraps Flutter's [Icon] widget and provides additional functionality
+/// specifically for SWM icons. It supports various customization options including
+/// color, size, and style variants.
+///
+/// Example usage:
+/// ```dart
+/// SWMIcon(
+///   SWMIcons.air,
+///   size: 24,
+///   color: Colors.blue,
+///   style: SWMIconStyles.curved,
+/// )
+/// ```
+///
+/// See also:
+///  * [SWMIcons], which defines all available SWM icons
+///  * [SWMIconStyles], which defines available icon styles (broken, curved, outline)
+///  {@endtemplate}
+final class SWMIcon extends StatelessWidget {
   /// {@macro swm_icon}
   const SWMIcon(
     this.icon, {
@@ -15,22 +33,24 @@ class SWMIcon extends StatelessWidget {
     this.semanticLabel,
   });
 
-  /// The icon to display.
+  /// The SWM icon to display. Must be a value from the [SWMIcons] enum.
   final SWMIcons icon;
 
-  /// The color to use when drawing the icon.
-  /// If null, defaults to the icon theme color or [Colors.black].
+  /// The icon's color. If null, defaults to the current [IconTheme]'s color.
+  /// If there is no [IconTheme], defaults to [Colors.black].
   final Color? color;
 
-  /// The size of the icon in logical pixels.
-  /// If null, defaults to the icon theme size or 20.
+  /// The icon's size in logical pixels. If null, defaults to the current [IconTheme]'s size.
+  /// If there is no [IconTheme], defaults to 20.0.
   final double? size;
 
-  /// The style of the icon.
-  /// If null, defaults to [SWMIconStyles.outline].
+  /// The visual style variant of the icon.
+  /// If null, defaults to the current [SWMIconsTheme]'s style.
+  /// If there is no [SWMIconsTheme], defaults to [SWMIconStyles.outline].
   final SWMIconStyles? style;
 
-  /// Semantic label for the icon.
+  /// Semantic label for the icon. This is read out by screen readers and is important for accessibility.
+  /// Should be a short, descriptive phrase describing the icon's purpose.
   final String? semanticLabel;
 
   @override
@@ -39,7 +59,7 @@ class SWMIcon extends StatelessWidget {
     final Color color =
         this.color ?? IconTheme.of(context).color ?? Colors.black;
     final String styleName =
-        (style ?? SWMIconsTheme.maybeStyleOf(context) ?? SWMIconStyles.outline)
+        (style ?? SWMIconTheme.maybeStyleOf(context) ?? SWMIconStyles.outline)
             .name;
 
     return Icon(

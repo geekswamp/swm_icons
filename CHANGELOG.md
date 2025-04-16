@@ -1,3 +1,7 @@
+## 0.2.3
+
+- docs: update SWMIcon docstring to correct company name
+
 ## 0.2.2
 
 - bump: update version to 0.2.2 and change repository links

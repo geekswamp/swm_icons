@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
 /// {@template swm_icons}
-/// SWM Icons.
+/// A collection of SWM icons represented as an enum.
 /// {@endtemplate}
 enum SWMIcons {
   /// Air icon.
@@ -242,9 +242,9 @@ enum SWMIcons {
   copy(0xea4f),
 
   /// Credit card icon.
-  creditcard(0xea50),
+  credit_card(0xea50),
 
-  /// Cross cirlce icon.
+  /// Cross circle icon.
   cross_circle(0xea51),
 
   /// Cross small icon.
@@ -326,7 +326,7 @@ enum SWMIcons {
   eye_open(0xea6b),
 
   /// Face ID icon.
-  faceid(0xea6c),
+  face_id(0xea6c),
 
   /// Family home icon.
   family_home(0xea6d),
@@ -472,8 +472,8 @@ enum SWMIcons {
   /// Map icon.
   map(0xea9c),
 
-  /// Medkit icon.
-  medkit(0xea9d),
+  /// Med kit icon.
+  med_kit(0xea9d),
 
   /// Meds icon.
   meds(0xea9e),
@@ -532,8 +532,8 @@ enum SWMIcons {
   /// Navigation icon.
   navigation(0xeab0),
 
-  /// Newscreen icon.
-  newscreen(0xeab1),
+  /// New screen icon.
+  new_screen(0xeab1),
 
   /// Next icon.
   next(0xeab2),
@@ -568,20 +568,20 @@ enum SWMIcons {
   /// PIN 2 icon.
   pin_2(0xeabc),
 
-  /// Pinpaper check icon.
-  pinpaper_check(0xeabd),
+  /// Pin paper check icon.
+  pin_paper_check(0xeabd),
 
-  /// Pinpaper cross icon.
-  pinpaper_cross(0xeabe),
+  /// Pin paper cross icon.
+  pin_paper_cross(0xeabe),
 
-  /// Pinpaper filled icon.
-  pinpaper_filled(0xeabf),
+  /// Pin paper filled icon.
+  pin_paper_filled(0xeabf),
 
-  /// Pinpaper minus icon.
-  pinpaper_minus(0xeac0),
+  /// Pin paper minus icon.
+  pin_paper_minus(0xeac0),
 
-  /// Pinpaper plus icon.
-  pinpaper_plus(0xeac1),
+  /// Pin paper plus icon.
+  pin_paper_plus(0xeac1),
 
   /// Plaster 1 icon.
   plaster_1(0xeac2),
@@ -722,13 +722,13 @@ enum SWMIcons {
   smartphone(0xeaef),
 
   /// Smartwatch cardio icon.
-  smartwach_cardio(0xeaf0),
+  smartwatch_cardio(0xeaf0),
 
   /// Smartwatch heart icon.
-  smartwach_heart(0xeaf1),
+  smartwatch_heart(0xeaf1),
 
   /// Smartwatch plus icon.
-  smartwach_plus(0xeaf2),
+  smartwatch_plus(0xeaf2),
 
   /// Sound 0 icon.
   sound_0(0xeaf3),
@@ -880,8 +880,8 @@ enum SWMIcons {
   /// Warning icon.
   warning(0xeb24),
 
-  /// Waterdrop icon.
-  waterdrop(0xeb25),
+  /// Water drop icon.
+  water_drop(0xeb25),
 
   /// Wheelchair icon.
   wheelchair(0xeb26),

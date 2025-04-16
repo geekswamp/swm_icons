@@ -4,15 +4,15 @@ import 'package:swm_icons/swm_icons.dart';
 /// {@template swm_icon_theme}
 /// A theme for SWM icons, allowing customization of icon styles.
 /// {@endtemplate}
-class SWMIconsTheme extends InheritedTheme {
+class SWMIconTheme extends InheritedTheme {
   /// {@macro swm_icon_theme}
-  const SWMIconsTheme({super.key, required super.child, required this.style});
+  const SWMIconTheme({super.key, required super.child, required this.style});
 
   /// The style to be applied to SWM icons within this theme.
   final SWMIconStyles style;
 
   @override
-  bool updateShouldNotify(covariant SWMIconsTheme oldWidget) {
+  bool updateShouldNotify(covariant SWMIconTheme oldWidget) {
     return style != oldWidget.style;
   }
 
@@ -37,11 +37,11 @@ class SWMIconsTheme extends InheritedTheme {
   /// final String styleName = (SWMIconsTheme.maybeStyleOf(context) ?? SWMIconStyles.outline).name;
   /// ```
   static SWMIconStyles? maybeStyleOf(BuildContext context) {
-    return context.dependOnInheritedWidgetOfExactType<SWMIconsTheme>()?.style;
+    return context.dependOnInheritedWidgetOfExactType<SWMIconTheme>()?.style;
   }
 
   @override
   Widget wrap(BuildContext context, Widget child) {
-    return SWMIconsTheme(style: style, child: child);
+    return SWMIconTheme(style: style, child: child);
   }
 }

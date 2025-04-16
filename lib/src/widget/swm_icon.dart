@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:swm_icons/swm_icons.dart';
 
 /// {@template swm_icon}
-/// A widget that displays a SWM (Software Made) icon with customizable properties.
+/// A widget that displays a SWM (Software Mansion) icon with customizable properties.
 ///
 /// This widget wraps Flutter's [Icon] widget and provides additional functionality
 /// specifically for SWM icons. It supports various customization options including
